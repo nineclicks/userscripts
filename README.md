@@ -7,3 +7,5 @@
 ---
 
 [Portal Leave Balance Days](portal-leave-balance-days) - Show days instead of hours for leave/vacation balance in Cal Poly portal.
+
+[Peoplesoft Logout](peoplesoft-logout) - Fix Peoplesoft non-prod logout
