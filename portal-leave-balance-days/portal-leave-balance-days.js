@@ -10,19 +10,31 @@
 
 (function() {
   'use strict';
-  let re = /^\s*([.0-9]*)\s*Hours.*/;
-  let rounding = 10.0; // tenths of a day
-  let dayHours = 8.0;
+  let re = /^\s*([.0-9]*)\s*Hours.*/
+  let re2 = /^\s*([0-9]+)\s+Days?.*/
 
-  let portalCont = document.getElementById("portletContent_u14l1n21");
-  let leaveTable = portalCont.getElementsByClassName("piTable")[0];
-  let cells = leaveTable.getElementsByTagName("td");
+  let table = document.getElementById("portletContent_u14l1n21").getElementsByClassName("piTable")[0];
+
+  let cells = table.getElementsByTagName("td");
   let sickCell = cells[1];
   let vacCell = cells[4];
+  let persCell = cells[7];
   let sickHours = parseFloat(re.exec(sickCell.innerText)[1]);
   let vacHours = parseFloat(re.exec(vacCell.innerText)[1]);
-  let sickDays = Math.round(sickHours / dayHours * rounding) / rounding;
-  let vacDays = Math.round(vacHours / dayHours * rounding) / rounding;
+  let persDays = parseFloat(re2.exec(persCell.innerText)[1]);
+  let sickDays = Math.round(sickHours / 8.0 * 10.0) / 10.0;
+  let vacDays = Math.round(vacHours / 8.0 * 10.0) / 10.0;
+  let totalDays = Math.floor(sickDays + vacDays + persDays);
   sickCell.innerText = sickDays + " Days";
   vacCell.innerText = vacDays + " Days";
+
+  // Add a row for total useable PTO
+  let row = table.insertRow(3);
+  row.setAttribute("class", "odd"); // "odd" class for styling
+  row.insertCell().innerHTML = "Total Useable PTO:";
+  row.insertCell().innerHTML = totalDays + " Days";
+  row.insertCell(); // Unused last column
+
+  // Last row is not odd anymore
+  table.getElementsByTagName("tr")[4].classList.remove("odd");
 })();
