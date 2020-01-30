@@ -6,6 +6,8 @@
 // @author       Nick Gardner
 // @match        https://myportal.calpoly.edu/f/u14l1s6/normal/render.uP
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/nineclicks/userscripts/master/portal-leave-balance-days/portal-leave-balance-days.js
+// @updateURL    https://raw.githubusercontent.com/nineclicks/userscripts/master/portal-leave-balance-days/portal-leave-balance-days.js
 // ==/UserScript==
 
 (function() {
