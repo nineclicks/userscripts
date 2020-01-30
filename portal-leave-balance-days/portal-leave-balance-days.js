@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Leave Balances
 // @namespace    nickgardner
-// @version      0.1
+// @version      0.2
 // @description  Change leave hours to leave days
 // @author       Nick Gardner
 // @match        https://myportal.calpoly.edu/f/u14l1s6/normal/render.uP
