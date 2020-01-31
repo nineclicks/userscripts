@@ -11,3 +11,5 @@
 [Peoplesoft Logout](peoplesoft-logout) - Fix Peoplesoft non-prod logout
 
 [Peoplesoft Breadcrumbs](peoplesoft-breadcrumbs) - Add a button to PeopleSoft to copy breadcrumbs. Includes rich text.
+
+[PeopleSoft Generate Deeplinks](peoplesoft-generate-deeplinks) - Adds entries to Favorites menu to generate idp and test idp deep links
