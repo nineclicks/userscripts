@@ -6,6 +6,8 @@
 // @author       Nick Gardner
 // @match        https://*.calstate.edu/psp/*/?cmd=logout
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/nineclicks/userscripts/master/peoplesoft-logout/peoplesoft-logout.js
+// @updateURL    https://raw.githubusercontent.com/nineclicks/userscripts/master/peoplesoft-logout/peoplesoft-logout.js
 // ==/UserScript==
 
 (function() {
