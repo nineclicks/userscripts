@@ -1,5 +1,4 @@
-
-PeopleSoft Copy Breadcrumbs Button
+# PeopleSoft Copy Breadcrumbs Button
 
 Add a button to PeopleSoft to copy breadcrumbs. Includes rich text.
 
