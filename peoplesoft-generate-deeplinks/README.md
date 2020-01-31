@@ -2,7 +2,7 @@
 
 Adds entries to Favorites menu to generate idp and test idp deep links
 
-Download URL: https://raw.githubusercontent.com/nineclicks/userscripts/master/peoplesoft-generate-deeplinks/peoplesoft-generate-deeplinks.js
+Download URL: `https://raw.githubusercontent.com/nineclicks/userscripts/master/peoplesoft-generate-deeplinks/peoplesoft-generate-deeplinks.js`
 
 ![Screenshot](screen.png)
 
